@@ -141,6 +141,7 @@ class Base extends React.Component
         return(
             <div className = "main">
                 <h1>Unofficial Covid Support</h1>
+                <h3><a href="resources.html" target="_blank">View resources instead</a></h3>
 
                 <div className = "dd-container">
                 <span class="custom-dropdown">
