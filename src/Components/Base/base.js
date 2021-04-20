@@ -153,7 +153,22 @@ class Base extends React.Component
                 
                 
                 <div id = "container" className="container">
-                    {projects}
+            <div class="flex flex-wrap -mx-4 overflow-hidden sm:-mx-px md:-mx-6">
+
+  <div class="my-4 px-4 w-full overflow-hidden sm:my-px sm:px-px md:my-6 md:px-6 md:w-1/3 lg:w-1/3">
+ {projects}
+  </div>
+
+  <div class="my-4 px-4 w-full overflow-hidden sm:my-px sm:px-px md:my-6 md:px-6 md:w-1/3 lg:w-1/3">
+  {projects}
+  </div>
+
+  <div class="my-4 px-4 w-full overflow-hidden sm:my-px sm:px-px md:my-6 md:px-6 md:w-1/3 lg:w-1/3">
+{projects}
+  </div>
+
+</div>
+                    
                 </div>
             </div>
         )
