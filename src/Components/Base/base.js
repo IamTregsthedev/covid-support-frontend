@@ -2,7 +2,6 @@ import React from 'react'
 import '../Base/style.css'
 import Airtable from 'airtable'
 
-import {TwitterTweetEmbed} from 'react-twitter-embed';
 import TweetEmbed from 'react-tweet-embed'
 
 
