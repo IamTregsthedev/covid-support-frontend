@@ -50,3 +50,8 @@ select{
     text-overflow: '';
 }
 
+@media only screen and (max-width: 570px){
+    .container{
+        margin: 3em 0.5em;
+    }
+}
