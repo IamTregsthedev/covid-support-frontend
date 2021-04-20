@@ -36,6 +36,8 @@ h1{
     display: flex;
     justify-content: center;
 }
+h3 {text-align: center; font-size: 2rem;}
+a {text-decoration: none; color: black;}
 
 select{
     background-color: #008fe2;
