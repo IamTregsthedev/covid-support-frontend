@@ -3,6 +3,7 @@ import '../Base/style.css'
 import Airtable from 'airtable'
 
 import {TwitterTweetEmbed} from 'react-twitter-embed';
+import TweetEmbed from 'react-tweet-embed'
 
 
 class Base extends React.Component
@@ -10,6 +11,7 @@ class Base extends React.Component
 
     componentDidMount(){
         this.getLocationData()
+
     }
 
     constructor(props)
@@ -123,8 +125,8 @@ class Base extends React.Component
     {   
         let projects=this.state.tweets.map((item,index)=>{
                 // Math.random().toString(36).substring(2);
-            return <TwitterTweetEmbed
-                     tweetId = {item[1]}
+            return <TweetEmbed
+                     id = {item[1]}
                      key = {item[2]}
                      options = {{width : 500}}
                     />
@@ -138,15 +140,22 @@ class Base extends React.Component
              
 
         return(
-            <div>
-                <select id = "dd" onChange = {this.change}>
-                    {locations}       
-                </select>
-            <div className="container">
+            <div className = "main">
+                <h1>Unofficial Covid Support</h1>
 
-                {projects}
+                <div className = "dd-container">
+                <span class="custom-dropdown">
+                    <select id = "dd" onChange = {this.change}>
+                        {locations}       
+                    </select>
+                    </span>
                 </div>
+                
+                
+                <div id = "container" className="container">
+                    {projects}
                 </div>
+            </div>
         )
     }
 }
